@@ -18,6 +18,8 @@ type Actions = {
 export const useTodoStore = create<State & Actions>()(
     immer((set) => ({
         todos: [
+            { title: 'Learn Networks', done: true, },
+            { title: 'Learn immer', done: true, },
             {
                 title: 'Learn Zustand',
                 done: false,
